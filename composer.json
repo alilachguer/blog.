@@ -42,7 +42,7 @@
         "post-install-cmd": [
             "@symfony-scripts",
             "php bin/console doctrine:database:create",
-            "php bin/console doctrine:schema:update"
+            "php bin/console doctrine:schema:update --force"
         ],
         "post-update-cmd": [
             "@symfony-scripts"
