@@ -1,0 +1,24 @@
+imports:
+    - { resource: config.yml }
+
+doctrine:
+    dbal:
+        url: "postgres://dwmtvmwpqeuscd:9a570bf5d0d18873d234f143829dd0e2b32d23a5752fe5d520b74a3d1ed07c38@ec2-46-51-184-66.eu-west-1.compute.amazonaws.com:5432/dnqm5u95kfddc"
+#    orm:
+#        metadata_cache_driver: apc
+#        result_cache_driver: apc
+#        query_cache_driver: apc
+
+monolog:
+    handlers:
+        main:
+            type: fingers_crossed
+            action_level: error
+            handler: nested
+        nested:
+            type: stream
+            path: '%kernel.logs_dir%/%kernel.environment%.log'
+            level: debug
+        console:
+            type: console
+            process_psr_3_messages: false
