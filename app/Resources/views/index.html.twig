@@ -6,7 +6,6 @@
 <h1>Welcome to the Blog:index page</h1>
 
 <h2>La liste des blogs</h2>
-    {{ dump(blogs) }}
     {% for blog in blogs %}
         <article>
             <header> <h1><a href="{{ blog.slug }}">{{ blog.title }}</a></h1></header>
