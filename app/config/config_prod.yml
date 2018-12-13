@@ -3,7 +3,7 @@ imports:
 
 doctrine:
     dbal:
-        url: "postgres://dwmtvmwpqeuscd:9a570bf5d0d18873d234f143829dd0e2b32d23a5752fe5d520b74a3d1ed07c38@ec2-46-51-184-66.eu-west-1.compute.amazonaws.com:5432/dnqm5u95kfddc"
+        url: "%env(DATABASE_URL)%"
 #    orm:
 #        metadata_cache_driver: apc
 #        result_cache_driver: apc
