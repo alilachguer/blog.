@@ -4,4 +4,10 @@
 
 {% block body %}
     <h1>Welcome to the Crud:index page</h1>
+
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    {{ form_end(form) }}
+
+    {{ post.title }}
 {% endblock %}

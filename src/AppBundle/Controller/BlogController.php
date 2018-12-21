@@ -22,5 +22,14 @@ class BlogController extends Controller
         ));
     }
 
+    /**
+     * @Route("/post/{id}")
+     */
+    public function postAction($id){
+        return $this->render('post.html.twig', array(
+            'id' => $id,
+        ));
+    }
+
 
 }
