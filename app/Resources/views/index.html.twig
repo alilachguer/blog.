@@ -6,9 +6,10 @@
 <h1>Welcome to the Blog:index page</h1>
 
 <h2>La liste des blogs</h2>
+
     {% for blog in blogs %}
         <article>
-            <header> <h1><a href="{{ blog.slug }}">{{ blog.title }}</a></h1></header>
+            <header> <h1><a href="/post/{{ blog.slug }}">{{ blog.title }}</a></h1></header>
             <section>{{ blog.content }}</section>
             <footer>{{ blog.publishedDatetime | date('d-m-y h:i') }}</footer>
         </article>

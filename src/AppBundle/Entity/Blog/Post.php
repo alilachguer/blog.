@@ -43,7 +43,7 @@ class Post
     private $content;
 
     /**
-     * @var \DateTime
+     * @var string
      *
      * @ORM\Column(name="published_datetime", type="datetime", length=255)
      */

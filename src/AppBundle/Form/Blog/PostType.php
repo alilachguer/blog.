@@ -17,7 +17,8 @@ class PostType extends AbstractType
         $builder->add('title')
             ->add('content')
             ->add('save', SubmitType::class, array('label' => 'poster'));
-    }/**
+    }
+    /**
      * {@inheritdoc}
      */
     public function configureOptions(OptionsResolver $resolver)

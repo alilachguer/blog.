@@ -9,7 +9,7 @@ use AppBundle\Entity\Blog;
 class BlogController extends Controller
 {
     /**
-     * @Route("/blog")
+     * @Route("/blog", name="blog")
      */
     public function indexAction()
     {
@@ -17,17 +17,21 @@ class BlogController extends Controller
         $blogs = $repository->findBy([], ['publishedDatetime' => 'DESC'], 10, 0);
         // findBy([], ['published'] => 'DESC'], 10, 0);
 
+
         return $this->render('index.html.twig', array(
             'blogs' => $blogs
         ));
     }
 
     /**
-     * @Route("/post/{id}")
+     * @Route("/post/{slug}", name="post")
      */
-    public function postAction($id){
+    public function postAction($slug){
+        $repository = $this->getDoctrine()->getRepository(Blog\Post::class);
+        $post = $repository->findOneBy(array('slug'=> $slug));
         return $this->render('post.html.twig', array(
-            'id' => $id,
+            'id' => $slug,
+            'post' => $post
         ));
     }
 

@@ -11,6 +11,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Validator\Constraints\DateTime;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Cocur\Slugify\Slugify;
 
 class CrudController extends Controller {
     /**
@@ -31,13 +32,11 @@ class CrudController extends Controller {
     public function newPostAction(Request $request){
         $post = new Post();
 
-        /**
         $dt = new \DateTime('now');
-        $date = $dt->format('d-m-Y H:i:s');
-        $post->setPublishedDatetime($date);
-        **/
-        $form = $this->createForm(PostType::class, $post);
+        //$date = \DateTime::createFromFormat('d-m-Y h:i', $dt);
+        $post->setPublishedDatetime($dt);
 
+        $form = $this->createForm(PostType::class, $post);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
@@ -45,14 +44,20 @@ class CrudController extends Controller {
             // but, the original `$task` variable has also been updated
             $post = $form->getData();
 
-            $post->setSlug('' . $post->getId());
+            $slugify = new Slugify();
+            $post->setSlug($slugify->slugify($post->getTitle(), '_'));
 
-            return $this->redirectToRoute( '/blog');
+            $entityManager = $this->getDoctrine()->getManager();
+            $entityManager->persist($post);
+            $entityManager->flush();
+
+            return $this->redirectToRoute( 'post', array(
+                'slug' => $post->getSlug()
+            ));
         }
 
         return $this->render('crud.html.twig', array(
-            'form' => $form->createView(),
-            'post' => $post
+            'form' => $form->createView()
         ));
     }
 

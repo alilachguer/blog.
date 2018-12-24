@@ -1,2 +1,10 @@
-{% block title %}AppBundle:Post:index{% endblock %}
-{{ id }}
+{% block body %}
+    <article>
+        <h1>{{ post.title }}</h1>
+        <section>
+            {{ post.content }}
+        </section>
+        <footer>{{ post.publishedDatetime.format('d/m/y h:i a') }}</footer>
+    </article>
+
+{% endblock %}
