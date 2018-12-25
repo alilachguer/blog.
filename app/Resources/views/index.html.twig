@@ -1,18 +1,52 @@
 {% extends "base.html.twig" %}
 
-{% block title %}AppBundle:Blog:index{% endblock %}
+{% block title %}Blog{% endblock %}
 
 {% block body %}
-<h1>Welcome to the Blog:index page</h1>
 
-<h2>La liste des blogs</h2>
+    <section class="hero is-primary is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Blog Ali Lachguer
+                </h1>
+                <h2 class="subtitle">
+                    Symfony E-application
+                </h2>
+            </div>
+        </div>
+    </section>
 
-    {% for blog in blogs %}
-        <article>
-            <header> <h1><a href="/post/{{ blog.slug }}">{{ blog.title }}</a></h1></header>
-            <section>{{ blog.content }}</section>
-            <footer>{{ blog.publishedDatetime | date('d-m-y h:i') }}</footer>
-        </article>
-    {% endfor %}
+    <div class="container is-widescreen" id="main">
+        {% for blog in blogs %}
+            <div class="columns is-centered">
+                <div class="column is-four-fifths media post">
+                    <article>
+                        <header>
+                            <h2><a href="/post/{{ blog.slug }}">{{ blog.title }}</a>
+                                <footer>
+                                    <h5><small>{{ blog.publishedDatetime | date('d-m-y h:i a') }}</small></h5>
+                                </footer>
+                            </h2>
+                        </header>
+                        <!--
+                        <img class="thumbnail" src="https://placehold.it/850x350">
+                        -->
+                        <section class="media-content">
+                            <p>{{ blog.content|length > 50 ? blog.content|slice(0, 50) ~ '...' : blog.content  }}</p>
+                        </section>
+                        <div class="callout">
+                            <ul class="menu simple">
+                                <li><a href="#">Author: Mike Mikers</a></li>
+                                <li><a href="#">Comments: 3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+
 {% endblock %}
 

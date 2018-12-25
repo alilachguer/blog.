@@ -1,0 +1,18 @@
+body{
+    background-color: #f6f6f6;
+}
+.post, nav, .level{
+    background-color: white;
+}
+.post{
+    border-radius: 3px;
+    margin: 10px;
+}
+
+nav{
+    padding: 15px;
+}
+
+.hero{
+    margin-bottom: 15px;
+}

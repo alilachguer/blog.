@@ -2,11 +2,50 @@
 <html>
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{{ asset('style.css') }}">
     </head>
     <body>
+
+        <div>
+
+        </div>
+
+        <nav class="level">
+            <div class="level-left">
+                <div class="level-item">
+                    <h1><strong>BLOG</strong></h1>
+                </div>
+            </div>
+
+            <div class="level-right">
+                {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                    <p class="level-item">
+                        <strong>
+                            {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
+                        </strong>
+                    </p>
+                    <p class="level-item">
+                        <a href="{{ path('fos_user_security_logout') }}">
+                            {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+                        </a>
+                    </p>
+
+                {% else %}
+                    <p class="level-item">
+                        <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
+                    </p>
+                    <p class="level-item">
+                        <a href="{{ path('fos_user_registration_register') }}">{{ 'layout.register'|trans({}, 'FOSUserBundle') }}</a>
+                    </p>
+                {% endif %}
+
+            </div>
+        </nav>
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>

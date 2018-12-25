@@ -1,16 +1,18 @@
 <?php
-// src/AppBundle/Entity/User.php
+// src/AppBundle/Entity/MyUser.php
 
-namespace AppBundle\Entity;
+namespace AppBundle\Entity\Blog;
 
 use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity
+ * MyUser
+ *
  * @ORM\Table(name="fos_user")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\Blog\MyUserRepository")
  */
-class User extends BaseUser
+class MyUser extends BaseUser
 {
     /**
      * @ORM\Id
