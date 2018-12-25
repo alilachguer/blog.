@@ -2,130 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6921272d-dc73-4a39-9063-0cd690308839" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.af.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.ar.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.bg.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.bn.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.bn_BD.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.ca.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.cs.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.da.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.de.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.el.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.en.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.eo.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.es.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.et.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.eu.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.fa.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.fi.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.fr.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.gl.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.he.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.hr.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.hu.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.id.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.it.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.ja.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.ky.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.lb.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.lt.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.lv.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.nb.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.nl.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.pl.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.pt.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.pt_BR.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.ro.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.ru.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.sk.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.sl.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.sr_Latn.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.sv.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.th.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.tr.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.uk.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.vi.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.zh_CN.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.ar.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.bg.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.bn.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.bn_BD.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.ca.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.cs.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.da.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.de.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.el.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.en.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.eo.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.es.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.eu.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.fa.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.fi.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.fr.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.he.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.hr.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.hu.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.id.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.it.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.ja.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.ky.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.lt.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.lv.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.nb.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.nl.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.pl.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.pt.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.pt_BR.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.ro.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.ru.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.sk.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.sl.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.sr_Latn.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.sv.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.th.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.tr.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.uk.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.vi.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/validators.zh_CN.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/ChangePassword/change_password.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/ChangePassword/change_password_content.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/edit_content.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/list.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/list_content.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/new.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/new_content.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/show.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/show_content.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/edit_content.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_content.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/check_email.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/confirmed.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/email.txt.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/check_email.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/email.txt.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/request.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/request_content.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/reset.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/reset_content.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login_content.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Repository/Blog/UserRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/confirmed.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/confirmed.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/post.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/post.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/config_prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config_prod.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/parameters.yml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/parameters.yml.dist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/BlogController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Blog/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Blog/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/CrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/CrudController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Blog/MyUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Blog/MyUser.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -153,10 +35,25 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/BlogController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+            <state relative-caret-position="288">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+              <folding>
+                <element signature="e#40#97#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/CrudController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="65" column="26" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
+              <folding>
+                <element signature="e#40#71#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -174,40 +71,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/RegistrationController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="111" column="90" selection-start-line="111" selection-start-column="60" selection-end-line="111" selection-end-column="90" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
+            <state relative-caret-position="192">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Blog/Post.php">
+        <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/confirmed.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+            <state relative-caret-position="336">
+              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Blog/User.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-              <folding>
-                <element signature="e#69#111#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="240">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -252,7 +137,6 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Form/Blog/PostType.php" />
         <option value="$PROJECT_DIR$/app/config/services.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Blog/Post.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/CrudController.php" />
         <option value="$PROJECT_DIR$/app/config/config_prod.yml" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml.dist" />
@@ -266,8 +150,11 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/BlogController.php" />
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Repository/Blog/UserRepository.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Blog/User.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Blog/MyUser.php" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/confirmed.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/CrudController.php" />
       </list>
     </option>
   </component>
@@ -575,12 +462,13 @@
       <workItem from="1544710093526" duration="9455000" />
       <workItem from="1545316132895" duration="10410000" />
       <workItem from="1545652661538" duration="8744000" />
-      <workItem from="1545676563317" duration="18456000" />
+      <workItem from="1545676563317" duration="18838000" />
+      <workItem from="1545741957571" duration="3536000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52772000" />
+    <option name="totallyTimeSpent" value="56690000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -593,13 +481,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27458397" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27912253" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32850242" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -621,24 +508,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="uml://DATABASE/e7c8af36-f448-42c5-a572-de842d0bbfbd">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>e7c8af36-f448-42c5-a572-de842d0bbfbd</OriginalElement>
-          <nodes />
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="268.0" y="182.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://e7c8af36-f448-42c5-a572-de842d0bbfbd/collation/NOCASE">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -647,16 +516,6 @@
     </entry>
     <entry file="das://e7c8af36-f448-42c5-a572-de842d0bbfbd/collation/BINARY">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/CrudController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
-          <folding>
-            <element signature="e#40#71#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config_test.yml">
       <provider selected="true" editor-type-id="text-editor">
@@ -696,25 +555,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/css/foundation.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/js/app.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/js/vendor/what-input.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/public/js/app.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/css/foundation.css" />
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/js/app.js" />
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/js/vendor/what-input.js" />
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/css/app.css" />
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/public/js/app.js" />
     <entry file="file://$PROJECT_DIR$/web/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -735,34 +580,10 @@
     <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Registration/email.txt.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/FOSUserBundle/doc/index.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/FOSUserBundle/doc/index.rst" />
     <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.bg.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-352" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.en.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/post.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="6" selection-start-line="10" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/BlogController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
-          <folding>
-            <element signature="e#40#97#0#PHP" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/edit.html.twig">
@@ -784,35 +605,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login_content.html.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/var/cache/dev/Container5gwprqx/getFosUser_Security_ControllerService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/var/cache/dev/Container5gwprqx/getFosUser_Security_ControllerService.php" />
     <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/routing/registration.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/Blog/UserRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/Blog/PostRepository.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -820,9 +621,6 @@
           <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/confirmed.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
@@ -837,6 +635,51 @@
     <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/email.txt.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="103" lean-forward="true" selection-start-line="8" selection-start-column="103" selection-end-line="8" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/Blog/MyUserRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/RegistrationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="111" column="90" selection-start-line="111" selection-start-column="60" selection-end-line="111" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Blog/Post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Blog/MyUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -844,13 +687,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/post.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="6" selection-start-line="10" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.en.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+        <state relative-caret-position="48">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/confirmed.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
@@ -864,47 +735,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/RegistrationController.php">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/BlogController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="111" column="90" selection-start-line="111" selection-start-column="60" selection-end-line="111" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="103" lean-forward="true" selection-start-line="8" selection-start-column="103" selection-end-line="8" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Blog/Post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Blog/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        <state relative-caret-position="288">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
-            <element signature="e#69#111#0#PHP" expanded="true" />
+            <element signature="e#40#97#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/crud.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/CrudController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="65" column="26" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
+          <folding>
+            <element signature="e#40#71#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

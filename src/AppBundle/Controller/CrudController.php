@@ -14,17 +14,6 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Cocur\Slugify\Slugify;
 
 class CrudController extends Controller {
-    /**
-     * @Route("/crud")
-     */
-    public function indexAction()
-    {
-        return $this->render('crud.html.twig', array(
-            // ...
-        ));
-    }
-
-
 
     /**
      * @Route("/crud/new")
@@ -60,5 +49,26 @@ class CrudController extends Controller {
             'form' => $form->createView()
         ));
     }
+
+    /**
+     * @Route("/crud/edit")
+     */
+    public function editPostAction(Request $request){
+
+        return $this->render('crud.html.twig', array(
+
+        ));
+    }
+
+    /**
+     * @Route("/crud/delete")
+     */
+    public function deletePostAction(Request $request){
+
+        return $this->render('crud.html.twig', array(
+
+        ));
+    }
+
 
 }
