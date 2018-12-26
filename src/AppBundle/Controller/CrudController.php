@@ -3,13 +3,10 @@
 namespace AppBundle\Controller;
 
 use AppBundle\Entity\Blog\Post;
+use AppBundle\Entity\Blog\MyUser;
 use AppBundle\Form\Blog\PostType;
-use Symfony\Component\Form\Extension\Core\Type\TextType;
-use Symfony\Component\Form\Extension\Core\Type\DateType;
-use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\Validator\Constraints\DateTime;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Cocur\Slugify\Slugify;
 
@@ -37,7 +34,7 @@ class CrudController extends Controller {
                 $post = $form->getData();
 
                 $slugify = new Slugify();
-                $post->setSlug($slugify->slugify($post->getTitle(), '_'));
+                $post->setSlug($slugify->slugify($post->getTitle()));
 
 
                     $user = $this->container->get('security.token_storage')->getToken()->getUser();
@@ -49,7 +46,6 @@ class CrudController extends Controller {
 
 
                 //$user = $this->getUser();
-
 
                 return $this->redirectToRoute( 'post', array(
                     'slug' => $post->getSlug()
@@ -74,22 +70,63 @@ class CrudController extends Controller {
     }
 
     /**
-     * @Route("/crud/edit", name="crud_edit")
+     * @Route("/crud/edit/{post_id}", name="crud_edit")
      */
-    public function editPostAction(Request $request){
+    public function editPostAction(Request $request, $post_id){
+
+
+
+        $repository = $this->getDoctrine()->getRepository(Post::class);
+        $post = $repository->findOneBy(array('id' => $post_id));
+
+
+
+        $form = $this->createForm(PostType::class, $post);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            // $form->getData() holds the submitted values
+            // but, the original `$task` variable has also been updated
+            $post = $form->getData();
+
+            $slugify = new Slugify();
+            $post->setSlug($slugify->slugify($post->getTitle(), '_'));
+
+            // $user = $this->container->get('security.token_storage')->getToken()->getUser();
+            // $post->setUsername($user->getUsername());
+
+            $entityManager = $this->getDoctrine()->getManager();
+            //$entityManager->persist($post);
+            $entityManager->flush();
+
+            //$user = $this->getUser();
+
+            return $this->redirectToRoute( 'posts', array(
+                'poste' => $post
+            ));
+        }
 
         return $this->render('crud.html.twig', array(
-
+            'form' => $form->createView()
         ));
     }
 
+
+
     /**
-     * @Route("/crud/delete", name="crud_delete")
+     * @Route("/crud/delete/{post_id}", name="crud_delete")
      */
-    public function deletePostAction(Request $request){
-
-        return $this->render('crud.html.twig', array(
-
+    public function deletePostAction(Request $request, $post_id){
+        $deleted = false;
+        $entityManager = $this->getDoctrine()->getManager();
+        $repository = $this->getDoctrine()->getManager()->getRepository(Post::class);
+        $post = $repository->find($post_id);
+        $entityManager->remove($post);
+        $entityManager->flush();
+        $deleted = true;
+        return $this->redirectToRoute( 'posts', array(
+            'deleted_post' => $post,
+            'deleted' => $deleted
         ));
     }
 

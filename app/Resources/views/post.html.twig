@@ -4,8 +4,10 @@
         <article class="content article">
             <h1 class="title is-1 ">{{ post.title }}</h1>
             <footer class="subtitle">
-                <div class="is-6">{{ post.username }}</div>
-                <p class="subtitle is-6">{{ post.publishedDatetime.format('d/m/y h:i a') }}</p>
+                <div class="tags has-addons">
+                    <span class="tag is-primary">{{ post.username }}</span>
+                    <span class="tag">{{ post.publishedDatetime | date('d-m-y h:i a') }}</span>
+                </div>
             </footer>
             <section class="media-content">
                 <p>

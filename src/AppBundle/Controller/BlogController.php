@@ -40,19 +40,18 @@ class BlogController extends Controller
         ));
     }
 
-
-    public function getCreatorOfPost($post){
-        $em = $this->getDoctrine()->getManager();
-        $query = $this->getEntityManager()
-            ->createQuery(
-                "SELECT username
-                from AppBundle:Blog/MyUser u, AppBundle:Blog/Post p
-                where u.id = p.user
-                and p.id = :id"
-            )->setParameter('id', $post->getId());
-
-        return $query->getOneOrNullResult();
+    /**
+     * @Route("/posts", name="posts")
+    */
+    public function profileAction(){
+        $repository = $this->getDoctrine()->getRepository(Blog\Post::class);
+        $user = $this->container->get('security.token_storage')->getToken()->getUser();
+        $user_name = $user->getUsername();
+        $posts = $repository->findBy(array('username'=> $user_name));
+        return $this->render('my_posts.html.twig', array(
+            'posts' => $posts,
+            'username' => $user_name
+        ));
     }
-
 
 }

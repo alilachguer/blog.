@@ -25,8 +25,10 @@
                         <header>
                             <h2 class="title is-3"><a href="/post/{{ blog.slug }}">{{ blog.title }}</a>
                                 <footer class="subtitle is-6">
-                                    <div>{{ blog.username }}</div>
-                                    <p class=" has-text-grey-light"><small>{{ blog.publishedDatetime | date('d-m-y h:i a') }}</small></p>
+                                    <div class="tags has-addons">
+                                        <span class="tag is-primary">{{ blog.username }}</span>
+                                        <span class="tag">{{ blog.publishedDatetime | date('d-m-y h:i a') }}</span>
+                                    </div>
                                 </footer>
                             </h2>
                         </header>
@@ -36,11 +38,6 @@
                         <section class="media-content">
                             <p class="is-small">{{ blog.content|length > 255 ? blog.content|slice(0, 255) ~ '...' : blog.content  }}</p>
                         </section>
-                        <div class="callout">
-                            <ul class="menu simple">
-                                <li><a href="#">Comments: 3</a></li>
-                            </ul>
-                        </div>
                     </article>
                 </div>
             </div>

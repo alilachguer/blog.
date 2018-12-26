@@ -24,7 +24,7 @@
             <div class="level-right">
                 {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                     <p class="level-item button is-normal">
-                        <a href="{{ path('fos_user_profile_show') }}">
+                        <a href="{{ path('posts') }}">
                             <strong>
                                 {{ app.user.username }}
                             </strong>
@@ -55,6 +55,11 @@
             </div>
         </nav>
         {% block body %}{% endblock %}
+        <footer>
+            <div>
+                <h1>footer</h1>
+            </div>
+        </footer>
         {% block javascripts %}{% endblock %}
     </body>
 </html>
