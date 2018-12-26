@@ -3,7 +3,6 @@
 namespace AppBundle\Entity\Blog;
 
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Post
@@ -24,7 +23,6 @@ class Post
 
     /**
      * @var string
-     * @Assert\NotBlank
      *
      * @ORM\Column(name="title", type="string", length=255, unique=true)
      */
@@ -39,7 +37,6 @@ class Post
 
     /**
      * @var string
-     * @Assert\NotBlank
      *
      * @ORM\Column(name="content", type="text")
      */
@@ -164,29 +161,5 @@ class Post
     public function getPublishedDatetime()
     {
         return $this->publishedDatetime;
-    }
-
-    /**
-     * Set username
-     *
-     * @param string $username
-     *
-     * @return Post
-     */
-    public function setUsername($username)
-    {
-        $this->username = $username;
-
-        return $this;
-    }
-
-    /**
-     * Get username
-     *
-     * @return string
-     */
-    public function getUsername()
-    {
-        return $this->username;
     }
 }

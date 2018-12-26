@@ -23,9 +23,10 @@
                 <div class="column is-four-fifths media post">
                     <article>
                         <header>
-                            <h2><a href="/post/{{ blog.slug }}">{{ blog.title }}</a>
-                                <footer>
-                                    <h5><small>{{ blog.publishedDatetime | date('d-m-y h:i a') }}</small></h5>
+                            <h2 class="title is-3"><a href="/post/{{ blog.slug }}">{{ blog.title }}</a>
+                                <footer class="subtitle is-6">
+                                    <div>{{ blog.username }}</div>
+                                    <p class=" has-text-grey-light"><small>{{ blog.publishedDatetime | date('d-m-y h:i a') }}</small></p>
                                 </footer>
                             </h2>
                         </header>
@@ -33,11 +34,10 @@
                         <img class="thumbnail" src="https://placehold.it/850x350">
                         -->
                         <section class="media-content">
-                            <p>{{ blog.content|length > 50 ? blog.content|slice(0, 50) ~ '...' : blog.content  }}</p>
+                            <p class="is-small">{{ blog.content|length > 255 ? blog.content|slice(0, 255) ~ '...' : blog.content  }}</p>
                         </section>
                         <div class="callout">
                             <ul class="menu simple">
-                                <li><a href="#">Author: Mike Mikers</a></li>
                                 <li><a href="#">Comments: 3</a></li>
                             </ul>
                         </div>

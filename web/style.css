@@ -1,5 +1,6 @@
-body{
+body, html{
     background-color: #f6f6f6;
+    font-family: "Liberation Sans";
 }
 .post, nav, .level{
     background-color: white;
@@ -15,4 +16,22 @@ nav{
 
 .hero{
     margin-bottom: 15px;
+}
+
+.media-content{
+    font-family: "Times New Roman";
+    margin-top: 10px;
+}
+
+.article{
+    background-color: white;
+    border-radius: 3px;
+    padding: 30px;
+}
+
+.article-container, .media{
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #e0e0e0;
+    border-width: 1px;
 }

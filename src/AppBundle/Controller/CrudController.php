@@ -16,42 +16,65 @@ use Cocur\Slugify\Slugify;
 class CrudController extends Controller {
 
     /**
-     * @Route("/crud/new")
+     * @Route("/crud/new", name="crud_new")
      */
     public function newPostAction(Request $request){
         $post = new Post();
-
-        $dt = new \DateTime('now');
-        //$date = \DateTime::createFromFormat('d-m-Y h:i', $dt);
-        $post->setPublishedDatetime($dt);
-
         $form = $this->createForm(PostType::class, $post);
         $form->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            // $form->getData() holds the submitted values
-            // but, the original `$task` variable has also been updated
-            $post = $form->getData();
+        if( $this->container->get( 'security.authorization_checker' )->isGranted( 'IS_AUTHENTICATED_FULLY' ) ) {
 
-            $slugify = new Slugify();
-            $post->setSlug($slugify->slugify($post->getTitle(), '_'));
 
-            $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->persist($post);
-            $entityManager->flush();
+            $dt = new \DateTime('now');
+            //$date = \DateTime::createFromFormat('d-m-Y h:i', $dt);
+            $post->setPublishedDatetime($dt);
 
-            return $this->redirectToRoute( 'post', array(
-                'slug' => $post->getSlug()
+
+            if ($form->isSubmitted() && $form->isValid()) {
+                // $form->getData() holds the submitted values
+                // but, the original `$task` variable has also been updated
+                $post = $form->getData();
+
+                $slugify = new Slugify();
+                $post->setSlug($slugify->slugify($post->getTitle(), '_'));
+
+
+                    $user = $this->container->get('security.token_storage')->getToken()->getUser();
+                    $post->setUsername($user->getUsername());
+
+                    $entityManager = $this->getDoctrine()->getManager();
+                    $entityManager->persist($post);
+                    $entityManager->flush();
+
+
+                //$user = $this->getUser();
+
+
+                return $this->redirectToRoute( 'post', array(
+                    'slug' => $post->getSlug()
+                ));
+
+            }
+
+            return $this->render('crud.html.twig', array(
+                'form' => $form->createView()
+            ));
+        } else if( $this->container->get( 'security.authorization_checker' )->isGranted( 'IS_AUTHENTICATED_ANONYMOUSLY ' ) ){
+            return $this->render('crud.html.twig', array(
+                'form' => $form->createView(),
+                'error' => 'You must logged in to write a post'
+            ));
+        } else {
+            return $this->render('crud.html.twig', array(
+                'form' => $form->createView(),
+                'error' => 'You must logged in to write a post'
             ));
         }
-
-        return $this->render('crud.html.twig', array(
-            'form' => $form->createView()
-        ));
     }
 
     /**
-     * @Route("/crud/edit")
+     * @Route("/crud/edit", name="crud_edit")
      */
     public function editPostAction(Request $request){
 
@@ -61,7 +84,7 @@ class CrudController extends Controller {
     }
 
     /**
-     * @Route("/crud/delete")
+     * @Route("/crud/delete", name="crud_delete")
      */
     public function deletePostAction(Request $request){
 

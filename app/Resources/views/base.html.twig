@@ -6,8 +6,9 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-        <link href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css' rel='stylesheet' type='text/css'>
+        <link href="{{ asset('bulma.min.css') }}" rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{{ asset('style.css') }}">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     </head>
     <body>
 
@@ -15,29 +16,38 @@
             <div class="level-left">
                 <a href="{{ path('blog') }}">
                     <div class="level-item">
-                        <h1><strong>BLOG</strong></h1>
+                        <h1 class="title is-3"><strong>BLOG</strong></h1>
                     </div>
                 </a>
             </div>
 
             <div class="level-right">
                 {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-                    <p class="level-item">
-                        <strong>
-                            {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
-                        </strong>
+                    <p class="level-item button is-normal">
+                        <a href="{{ path('fos_user_profile_show') }}">
+                            <strong>
+                                {{ app.user.username }}
+                            </strong>
+                        </a>
                     </p>
-                    <p class="level-item">
+                    <p class="level-item button is-normal">
+                        <a href="{{ path('crud_new') }}">
+                            <span class="icon has-text-info">
+                              <i class="fas fa-plus"></i>
+                            </span>
+                        </a>
+                    </p>
+                    <p class="level-item button is-normal">
                         <a href="{{ path('fos_user_security_logout') }}">
                             {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
                         </a>
                     </p>
 
                 {% else %}
-                    <p class="level-item">
+                    <p class="level-item button is-normal">
                         <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
                     </p>
-                    <p class="level-item">
+                    <p class="level-item button is-normal">
                         <a href="{{ path('fos_user_registration_register') }}">{{ 'layout.register'|trans({}, 'FOSUserBundle') }}</a>
                     </p>
                 {% endif %}

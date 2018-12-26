@@ -28,10 +28,30 @@ class BlogController extends Controller
     public function postAction($slug){
         $repository = $this->getDoctrine()->getRepository(Blog\Post::class);
         $post = $repository->findOneBy(array('slug'=> $slug));
+        $user = $this->getDoctrine()
+            ->getRepository(Blog\MyUser::class)
+            ->findOneBy(array('id' => $post->getId()));
+
+        //$user = $this->getCreatorOfPost($post);
+
         return $this->render('post.html.twig', array(
             'id' => $slug,
             'post' => $post
         ));
+    }
+
+
+    public function getCreatorOfPost($post){
+        $em = $this->getDoctrine()->getManager();
+        $query = $this->getEntityManager()
+            ->createQuery(
+                "SELECT username
+                from AppBundle:Blog/MyUser u, AppBundle:Blog/Post p
+                where u.id = p.user
+                and p.id = :id"
+            )->setParameter('id', $post->getId());
+
+        return $query->getOneOrNullResult();
     }
 
 

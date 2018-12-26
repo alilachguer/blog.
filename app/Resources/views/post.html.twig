@@ -1,11 +1,17 @@
 {% extends "base.html.twig" %}
 {% block body %}
-    <article>
-        <h1>{{ post.title }}</h1>
-        <section>
-            {{ post.content }}
-        </section>
-        <footer>{{ post.publishedDatetime.format('d/m/y h:i a') }}</footer>
-    </article>
-
+    <div class="container is-fluid article-container">
+        <article class="content article">
+            <h1 class="title is-1 ">{{ post.title }}</h1>
+            <footer class="subtitle">
+                <div class="is-6">{{ post.username }}</div>
+                <p class="subtitle is-6">{{ post.publishedDatetime.format('d/m/y h:i a') }}</p>
+            </footer>
+            <section class="media-content">
+                <p>
+                    {{ post.content }}
+                </p>
+            </section>
+        </article>
+    </div>
 {% endblock %}
