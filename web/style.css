@@ -1,6 +1,5 @@
 body, html{
     background-color: #f6f6f6;
-    font-family: "Liberation Sans";
 }
 .post, nav, .level{
     background-color: white;
@@ -14,8 +13,9 @@ nav{
     padding: 15px;
 }
 
-.hero{
-    margin-bottom: 15px;
+
+#footer {
+    margin-top: 15px;
 }
 
 .media-content{

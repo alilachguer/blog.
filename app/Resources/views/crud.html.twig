@@ -3,13 +3,13 @@
 {% block title %}AppBundle:Crud:index{% endblock %}
 
 {% block body %}
-    <h1>Welcome to the Crud:index page</h1>
     {% if error is defined %}
         <div class="is-size-4 has-text-danger has-text-weight-semibold">{{ error }}</div>
     {% endif %}
 
+    <div class="columns is-centered">
     {{ form_start(form) }}
     {{ form_widget(form) }}
     {{ form_end(form) }}
-
+    </div>
 {% endblock %}
