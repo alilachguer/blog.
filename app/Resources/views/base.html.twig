@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
+        <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
         <link href="{{ asset('bulma.min.css') }}" rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{{ asset('style.css') }}">
@@ -14,40 +15,42 @@
 
         <nav class="level">
             <div class="level-left">
-                <a href="{{ path('blog') }}">
+                <a href="{{ path('blog') }}" class="is-primary">
                     <div class="level-item">
-                        <h1 class="title is-3"><strong>BLOG</strong></h1>
+                        <p class="title is-2 is-primary"><strong>blog.</strong></p>
                     </div>
                 </a>
             </div>
 
+
+
             <div class="level-right">
                 {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-                    <p class="level-item button is-normal">
+                    <p class="level-item is-normal">
                         <a href="{{ path('posts') }}">
                             <strong>
                                 {{ app.user.username }}
                             </strong>
                         </a>
                     </p>
-                    <p class="level-item button is-normal">
+                    <p class="level-item is-normal">
                         <a href="{{ path('crud_new') }}">
                             <span class="icon has-text-info">
                               <i class="fas fa-plus"></i>
                             </span>
                         </a>
                     </p>
-                    <p class="level-item button is-normal">
+                    <p class="level-item is-normal">
                         <a href="{{ path('fos_user_security_logout') }}">
                             {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
                         </a>
                     </p>
 
                 {% else %}
-                    <p class="level-item button is-normal">
+                    <p class="level-item is-normal">
                         <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
                     </p>
-                    <p class="level-item button is-normal">
+                    <p class="level-item is-normal">
                         <a href="{{ path('fos_user_registration_register') }}">{{ 'layout.register'|trans({}, 'FOSUserBundle') }}</a>
                     </p>
                 {% endif %}
@@ -56,19 +59,16 @@
         </nav>
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
-        <footer id="footer">
-            <section class="hero is-medium is-dark is-bold">
-                <div class="hero-body">
-                    <div class="container">
-                        <h1 class="title">
-                            Footer du BLOG
-                        </h1>
-                        <h2 class="subtitle">
-                            E-application Symfony 3.4
-                        </h2>
-                    </div>
-                </div>
-            </section>
+
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p>
+                    <strong>blog.</strong> by Ali Lachguer
+                </p>
+                <p>Projet Symfony 3.4</p>
+            </div>
         </footer>
+
+
     </body>
 </html>

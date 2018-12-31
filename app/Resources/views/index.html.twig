@@ -6,10 +6,10 @@
 
 
 
-    <div class="container is-widescreen" id="main">
+    <div class="container" id="main">
         {% for blog in blogs %}
             <div class="columns is-centered">
-                <div class="column is-four-fifths media post">
+                <div class="column is-8 media post">
                     <article>
                         <header>
                             <h2 class="title is-3"><a href="/post/{{ blog.slug }}">{{ blog.title }}</a>

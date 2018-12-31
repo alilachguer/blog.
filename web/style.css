@@ -1,25 +1,21 @@
 body, html{
-    background-color: #f6f6f6;
+    font-family: "Zilla Slab", serif;
 }
 .post, nav, .level{
     background-color: white;
 }
+
 .post{
-    border-radius: 3px;
-    margin: 10px;
+    padding-bottom: 20px;
+    margin: 20px;
 }
 
 nav{
-    padding: 15px;
-}
-
-
-#footer {
-    margin-top: 15px;
+    padding: 25px;
+    border-bottom: 1px solid #eeeeee;
 }
 
 .media-content{
-    font-family: "Times New Roman";
     margin-top: 10px;
 }
 
@@ -30,8 +26,11 @@ nav{
 }
 
 .article-container, .media{
-    border-radius: 3px;
-    border-style: solid;
+    border-bottom: 5px solid;
     border-color: #e0e0e0;
     border-width: 1px;
+}
+
+.footer{
+    background-color: white;
 }

@@ -5,7 +5,7 @@
 {% block fos_user_content %}
     <section class="hero is-medium is-success is-bold">
         <div class="hero-body">
-            <div class="container">
+            <div>
                 <h1 class="title">
                     <p>{{ 'registration.confirmed'|trans({'%username%': user.username}) }}</p>
                 </h1>
@@ -16,7 +16,7 @@
     {% if targetUrl %}
         <section class="hero is-medium is-warning is-bold">
             <div class="hero-body">
-                <div class="container">
+                <div>
                     <h1 class="title">
                         <p><a href="{{ targetUrl }}">{{ 'registration.back'|trans }}</a></p>
                     </h1>
