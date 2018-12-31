@@ -48,6 +48,9 @@
         ],
         "post-update-cmd": [
             "@symfony-scripts"
+        ],
+        "compile": [
+            "app/console assets:install"
         ]
     },
     "config": {
