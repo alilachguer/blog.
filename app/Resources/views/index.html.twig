@@ -13,8 +13,8 @@
                     <article>
                         <header>
                             <h2 class="title is-3"><a href="/post/{{ blog.slug }}">{{ blog.title }}</a>
-                                <footer class="subtitle is-6">
-                                    <div class="tags has-addons">
+                                <footer class="subtitle">
+                                    <div class="tags has-addons is-small">
                                         <span class="tag is-primary">{{ blog.username }}</span>
                                         <span class="tag">{{ blog.publishedDatetime | date('d-m-y h:i a') }}</span>
                                     </div>
@@ -31,7 +31,14 @@
                 </div>
             </div>
         {% endfor %}
+        <div class="columns is-half is-centered">
+            <div class="navigation is-4">
+                {{ knp_pagination_render(blogs) }}
+            </div>
+        </div>
+
     </div>
+
 
 
 {% endblock %}
