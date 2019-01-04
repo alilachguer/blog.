@@ -27,3 +27,6 @@ security:
         - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/admin/, role: ROLE_ADMIN }
+        - { path: /crud/edit/, role: IS_AUTHENTICATED_REMEMBERED }
+        - { path: /crud/new/, role: IS_AUTHENTICATED_REMEMBERED }
+        - { path: /crud/delete/, role: IS_AUTHENTICATED_REMEMBERED }
